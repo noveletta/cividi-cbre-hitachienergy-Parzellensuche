@@ -11,7 +11,6 @@ st.set_page_config(
 )
 import gc
 
-from utils import *
 from search_results_utils import *
 
 
