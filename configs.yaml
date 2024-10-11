@@ -1,0 +1,818 @@
+ad_property_type_selection : {
+  "apartment": ["attika","Terrassenwohnung","Maisonette","Wohnung","attic apartment",
+  "Dachwohnung",
+  "Penthouse",
+  "apartment",
+  "apartment with terrace",
+  "loft",
+],
+  "house": [
+  "singlefamilyhouse",
+ "Terraced/row house",
+ "Terrassenhaus",
+ "Reihenhaus",
+ "Split-level house",
+ "Farm",
+ "Haus",
+ "Doppeleinfamilienhaus",
+ "Bauernhaus",
+ "Single-family house",
+ "Villa",
+ "Semi-detached house",
+],
+office: ["Commercial property","Gewerbegrundstück","Commercial land"]
+}
+
+stats_col_translation: {
+  "house":"hause",
+  "apartment":"apartment",
+  "any":"apartment",
+  "buy":"sale",
+  "rent":"rent",
+  }
+
+
+ 
+# cmap_name: "RdYlBu_r"
+# cmap_name: "pink"
+cmap_name: "magma"
+
+
+lu: [5,95]
+
+types_of_ad: {"buy":20,"rent":10}
+
+plots_properties:
+  labelFontSize: 17
+  titleFontSize: 16
+
+
+
+kanton_full_names:  
+ Aargau: AG
+ Appenzell Ausserrhoden: AR
+ Appenzell Innerrhoden: AI
+ Bern: BE
+ Basel-Landschaft: BL
+ Basel-Stadt: BS
+ Fribourg: FR
+ Genève: GE
+ Glarus: GL
+ Graubünden: GR
+ Jura: JU
+ Luzern: LU
+ Neuchâtel: NE
+ Nidwalden: NW
+ Obwalden: OW
+ Schaffhausen: SH
+ Schwyz: SZ
+ Solothurn: SO
+ St. Gallen: SG
+ Ticino: TI
+ Thurgau: TG
+ Uri: UR
+ Vaud: VD
+ Valais: VS
+ Zug: ZG
+ Zürich: ZH
+
+
+
+
+expired_icon: "./static/images/expired.png"
+available_icon: "./static/images/available.png"
+
+esg_label_icons:
+  1: "./static/images/esg_1.png"
+  2: "./static/images/esg_2.png"
+  3: "./static/images/esg_3.png"
+  4: "./static/images/esg_4.png"
+  5: "./static/images/esg_5.png"
+  6: "./static/images/esg_6.png"
+  7: "./static/images/esg_7.png"
+   
+
+
+zip_kanton_mapping_fn : "./static/data/zipcode_kantons.parquet"
+oereb_gemeinde_kantons : "./static/data/oereb_gemeinde_kantons.parquet"
+
+
+construction_periods_ditc : [
+  'Vor 1919',
+ '1919-1945',
+ '1946-1960',
+ '1961-1970',
+ '1971-1980',
+ '1981-1985',
+ '1986-1990',
+ '1991-1995',
+ '1996-2000',
+ '2001-2005',
+ '2006-2010',
+ '2011-2015',
+ 'Nach 2015']
+
+
+
+
+ad_property_type_selection : {
+  "apartment": ["attika","Terrassenwohnung","Maisonette","Wohnung","attic apartment",
+  "Dachwohnung",
+  "Penthouse",
+  "apartment",
+  "apartment with terrace",
+  "loft",
+],
+  "house": [
+  "singlefamilyhouse",
+ "Terraced/row house",
+ "Terrassenhaus",
+ "Reihenhaus",
+ "Split-level house",
+ "Farm",
+ "Haus",
+ "Doppeleinfamilienhaus",
+ "Bauernhaus",
+ "Single-family house",
+ "Villa",
+ "Semi-detached house",
+],
+office: ["Commercial property","Gewerbegrundstück","Commercial land"]
+}
+
+stats_col_translation: {
+  "house":"hause",
+  "apartment":"apartment",
+  "any":"apartment",
+  "buy":"sale",
+  "rent":"rent",
+  }
+
+# cmap_name: "RdYlBu_r"
+# cmap_name: "pink"
+cmap_name: "magma"
+# cmap_name: "BuPu"
+
+
+lu: [5,95]
+
+types_of_ad: {"buy":20,"rent":10}
+
+plots_properties:
+  labelFontSize: 17
+  titleFontSize: 16
+
+
+
+kanton_full_names:  
+ Aargau: AG
+ Appenzell Ausserrhoden: AR
+ Appenzell Innerrhoden: AI
+ Bern: BE
+ Basel-Landschaft: BL
+ Basel-Stadt: BS
+ Fribourg: FR
+ Genève: GE
+ Glarus: GL
+ Graubünden: GR
+ Jura: JU
+ Luzern: LU
+ Neuchâtel: NE
+ Nidwalden: NW
+ Obwalden: OW
+ Schaffhausen: SH
+ Schwyz: SZ
+ Solothurn: SO
+ St. Gallen: SG
+ Ticino: TI
+ Thurgau: TG
+ Uri: UR
+ Vaud: VD
+ Valais: VS
+ Zug: ZG
+ Zürich: ZH
+
+
+
+
+expired_icon: "./static/images/expired.png"
+available_icon: "./static/images/available.png"
+
+esg_label_icons:
+  1: "./static/images/esg_1.png"
+  2: "./static/images/esg_2.png"
+  3: "./static/images/esg_3.png"
+  4: "./static/images/esg_4.png"
+  5: "./static/images/esg_5.png"
+  6: "./static/images/esg_6.png"
+  7: "./static/images/esg_7.png"
+   
+
+
+zip_kanton_mapping_fn : "./static/data/zipcode_kantons.parquet"
+oereb_gemeinde_kantons : "./static/data/oereb_gemeinde_kantons.parquet"
+
+
+construction_periods_ditc : [
+  'Vor 1919',
+ '1919-1945',
+ '1946-1960',
+ '1961-1970',
+ '1971-1980',
+ '1981-1985',
+ '1986-1990',
+ '1991-1995',
+ '1996-2000',
+ '2001-2005',
+ '2006-2010',
+ '2011-2015',
+ 'Nach 2015']
+
+ad_columns : ['ad_AdId',
+ 'ad_AdStatus',
+ 'ad_Address',
+ 'ad_Area',
+ 'ad_DealType',
+ 'ad_FoundForTheFirstTime',
+ 'ad_ImageUrls',
+ 'ad_Latitude',
+ 'ad_Longitude',
+ 'ad_MainData_Floor',
+ 'ad_MainData_YearOfConstruction',
+ 'ad_MapData_ShowMarker',
+ 'ad_MapData_ShowStreetView',
+ 'ad_Month',
+ 'ad_NumRooms',
+ 'ad_Price',
+ 'ad_PriceType',
+ 'ad_PropertyTypeId',
+ 'ad_Remarks',
+ 'ad_Title',
+ 'ad_Year',
+ 'targetingInformation_immoCanton',
+ 'targetingInformation_immoTownName',
+ 'targetingInformation_immoType',
+ 'targetingInformation_immoZipCode',
+ 'ad_additional_features']
+
+
+development_potential_cols : [
+  'building zone extract pdf',
+  'building zone extract url',
+  'land area',
+  'land plot area ratio',
+  'land plot area ratio residential',
+  'land floor area ratio',
+  'land total residential area',
+  'land highest floor number',
+  'latest construction year in land',
+  'latest construction period in land',
+  'latest residential construction year in land',
+  'latest residential construction period in land',
+  'land total residential units',
+  'land total residential rooms',
+  'land total kitchen number',
+  'land number of buildings',
+  'land number of residential buildings',
+  'building zone TypeCode Text',
+  'building zone TypeCode Description',
+  'land in building zone pct',
+  'egid',
+  'egrid',
+  'land_building_info_match_score',
+  'land_parcel_information',
+  
+  ]
+
+development_potential_pretty_cols : {
+  'building zone extract pdf':{},
+  'building zone extract url':{},
+  'land area':{'c_n':'land parcel area (m²)','c_type':'int','c_help':'land parcel area (m²)'},
+  'land plot area ratio':{'c_n':'current plot area ratio in the parcel','c_type':'progressdecimal2','c_help':'the lower number the higher under-utilized potential','min_v':0,'max_v':1.0},
+  'land plot area ratio residential':{'c_n':'current residential plot area ratio in the parcel','c_type':'progressdecimal2','c_help':'the lower number the higher under-utilized potential','min_v':0,'max_v':1.0},
+  'land floor area ratio':{'c_n':'current floor area ratio in the parcel','c_type':'progressdecimal2','c_help':'the lower number the higher under-utilized potential','min_v':0,'max_v':2.0},
+  'land total residential area':{'c_n':'current total residential area (m²) in the parcel','c_type':'int','c_help':None},
+  'land highest floor number':{'c_n':'current highest floor number in the parcel','c_type':'int','c_help':None},
+  'latest construction year in land':{'c_n':'latest construction year in the parcel','c_type':'int','c_help':None},
+  'latest construction period in land':{'c_n':'latest construction period in the parcel','c_type':'text','c_help':None},
+  'latest residential construction year in land':{'c_n':'latest residential construction year in the parcel','c_type':'text','c_help':None},
+  'latest residential construction period in land':{'c_n':'latest residential construction period in the parcel','c_type':'text','c_help':None},
+  'land total residential units':{'c_n':'total residential units in the parcel','c_type':'int','c_help':None},
+  'land total residential rooms':{'c_n':'total rooms in the parcel','c_type':'int','c_help':None},
+  'land total kitchen number':{'c_n':'total kitchens in the parcel','c_type':'int','c_help':None},
+  'land number of buildings':{'c_n':'total buildings in the parcel','c_type':'int','c_help':None},
+  'land number of residential buildings':{'c_n':'total residential buildings in the parcel','c_type':'int','c_help':None},
+  'building zone TypeCode Text':{'c_n':'parcel construction zone','c_type':'text','c_help':None},
+  'building zone TypeCode Description':{'c_n':'parcel construction zone description','c_type':'text','c_help':None},
+  # 'land in building zone pct':,
+  'egid':{'c_n':'building ID (egid)','c_type':'text','c_help':federal ID},
+  'egrid':{'c_n':'parcel ID (egrid)','c_type':'text','c_help':federal ID},
+  'land_building_info_match_score':{'c_n':'advertised propery address match score','c_type':'int','c_help':None},
+  # 'land_parcel_information':'land_parcel_information',
+  
+}
+
+
+
+
+
+micro_quality_cols : [
+ 'micro quality rent desirability gemeinde score', 
+ 'micro quality transport gemeinde score',
+ 'micro quality education gemeinde score',
+ 'micro quality food gemeinde score',
+ 'micro quality health gemeinde score',
+ 'micro quality money gemeinde score',
+ 'micro quality shop gemeinde score',
+ 'micro quality sport gemeinde score'
+ ]
+
+# micro_quality_pretty_cols : {'micro quality rent desirability gemeinde score':'rent desirability score', 
+#  'micro quality public transport gemeinde score':'public transport access score',
+#  'micro quality food gemeinde score':'access to restaurants/bars score',
+#  'micro quality shop gemeinde score':'sccess to shops score',
+#  'micro quality sport gemeinde score':'access to sport facilities score',
+#  'micro quality education gemeinde score':'access to school score',
+#  'micro quality health gemeinde score':'access to health facilities score',
+#  'micro quality money gemeinde score':'access to bank score',
+#  }
+
+micro_quality_pretty_cols: {
+  'micro quality rent desirability gemeinde score':{'c_n':'rent desirability score','c_type':'progressint','c_help':'relative micro quality score in the same city,where higher score is better. The maximum score is 100.'},
+  'micro quality transport gemeinde score':{'c_n':'public transport access score','c_type':'progressint','c_help':'relative micro quality score in the same city, where higher score is better. The maximum score is 100.'},
+  'micro quality shop gemeinde score':{'c_n':'sccess to shops score','c_type':'progressint','c_help':'relative micro quality score in the same city, where higher score is better. The maximum score is 100.'},
+  'micro quality sport gemeinde score':{'c_n':'access to sport facilities score','c_type':'progressint','c_help':'relative micro quality score in the same city, where higher score is better. The maximum score is 100.'},
+  'micro quality education gemeinde score':{'c_n':'access to school score','c_type':'progressint','c_help':'relative micro quality score in the same city, where higher score is better. The maximum score is 100.'},
+  'micro quality food gemeinde score':{'c_n':'access to restaurants and bars score','c_type':'progressint','c_help':'relative micro quality score in the same city, where higher score is better. The maximum score is 100.'},
+  'micro quality health gemeinde score':{'c_n':'access to health facilities score','c_type':'progressint','c_help':'relative micro quality score in the same city, where higher score is better. The maximum score is 100.'},
+  'micro quality money gemeinde score':{'c_n':'access to bank score','c_type':'progressint','c_help':'relative micro quality score in the same city, where higher score is better. The maximum score is 100.'},
+  'micro quality education poi access in 500 m':{'c_n':'number of schools in 500 meters','c_type':'int','c_help':'number of schools in 500 meters, where higher number is better.'},
+  'micro quality food poi access in 500 m':{'c_n':'number of restaurants and bars in 500 meters','c_type':'int','c_help':'number of restaurants and bars in 500 meters, where higher number is better.'},
+  'micro quality health poi access in 500 m':{'c_n':'number of health facilities in 500 meters','c_type':'int','c_help':'number of health facilities in 500 meters, where higher number is better.'},
+  'micro quality money poi access in 500 m':{'c_n':'number of banks in 500 meters','c_type':'int','c_help':'number of banks in 500 meters, where higher number is better.'},
+  'micro quality shop poi access in 500 m':{'c_n':'number of shops in 500 meters','c_type':'int','c_help':'number of shops in 500 meters, where higher number is better.'},
+  'micro quality sport poi access in 500 m':{'c_n':'number of sport facilities in 500 meters','c_type':'int','c_help':'number of sport facilities in 500 meters, where higher number is better.'},
+  'micro quality transport poi access in 500 m':{'c_n':'number of public transport stops in 500 meters','c_type':'int','c_help':'number of public transport stops in 500 meters, where higher number is better.'},
+}
+
+building_esg_pretty_cols: {
+'co2 intensity (noveletta)':{'c_n':'CO2 intensity (kg.CO2/m²)','c_type':'int','c_help':'machine learning based estimated CO2 intensity (kg.CO2/m²) of the building based on several building attributes. lower scores are better.'},
+'co2 class (noveletta)':{'c_n':'CO2 label','c_type':'int','c_help':'machine learning based CO2 (Esg) label of the building based on several building attributes. lower labels are better. labels are between 1 to 7'},
+# 'installed renewable year':
+'installed renewable total power (kwh)':{'c_n':'installed solar power (kwh)','c_type':'int','c_help':''},
+# 'installed renewable initial power (kwh)
+'energy standard':{'c_n':'energy standard','c_type':'int','c_help':'energy standards indicate that building has high energy system quality.'},
+
+}
+
+
+
+#  'micro quality transport gemeinde score',
+
+energy_esg_cols : [
+ 'co2 intensity (noveletta)',
+ 'co2 class (noveletta)',
+ 'co2 intensity estimation year (noveletta)',
+ 'installed renewable year',
+ 'installed renewable total power (kwh)',
+ 'installed renewable initial power (kwh)',
+ 'energy standard',
+ 'main energy source/generator',
+ 'generator system (heating)',
+ 'energy source (heating)',
+ 'update date (heating)',
+ 'generator system (hot water)',
+ 'energy source (hot water)',
+ 'update date (hot water)',
+ 'building category',
+ 'building class',
+ 'footprint area',
+ 'number of floors',
+ 'number of apartments',
+ 'building total residential area',
+ 'estimated construction period',
+ 'estimated construction year',
+ 'estimated latest renovation year',
+ 'building number of apartments',
+ 'building number of rooms',
+ 'building number of kitchens'
+]
+
+gwr_attributes_dict : 
+  id: id
+  label: label
+  strindx: strindx
+  strname: strname
+  strname_deinr: strname_deinr
+  strnamk: strnamk
+  stroffiziel: stroffiziel
+  strsp: strsp
+  layerBodId: layerBodId
+  layerName: layerName
+  lparz: lparz
+  lparzsx: lparzsx
+  plz_plz6: plz_plz6
+  bbox: bbox
+  dkode: dkode
+  dkodn: dkodn
+  gkode: gkode
+  gkodn: gkodn
+  gksce: coordinate_data_source
+  gvolsce: building_volume_data_source
+  gschutzr: civil_defence_room_available
+  geometry: geometry
+  geometry_spatialReference_wkid: geometry_spatialReference_wkid
+  geometry_x: geometry_x
+  geometry_y: geometry_y
+  dplz4: dplz4
+  dplzname: dplzname
+  dexpdat: dexpdat
+  edid: Federal_Entry_Identifier
+  egaid: Federal_Building_Address_Identifier
+  egid: egid
+  egrid: egrid
+  esid: Federal_Road_Identifier
+  ewid: ewid
+  featureId: featureId
+  gdekt: gdekt
+  gebf: energy_reference_area
+  genh1: Energy_heat_source_heating_1
+  genh2: Energy_heat_source_heating_2
+  gwaerdath1: update_date_heating_1
+  gwaerdath2: update_date_heating_2
+  genw1: Energy_heat_source_hot_water_1
+  genw2: Energy_heat_source_hot_water_2
+  gwaerdatw1: update_date_hot_water_1
+  gwaerdatw2: update_date_hot_water_2
+  gwaerzh1: heat_generator_heating_1
+  gwaerzh2: heat_generator_heating_2
+  gwaerzw1: heat_generator_hot_water_1
+  gwaerzw2: heat_generator_hot_water_2
+  gwaersceh1: heating_1_data_source
+  gwaersceh2: heating_2_data_source
+  gwaerscew1: hot_water_1_data_source
+  gwaerscew2: hot_water_2_data_source
+  doffadr: is_official_address
+  gexpdat: latest_data_update
+  ggdename: ggdename
+  gbez: building_name
+  # egid: Building (EGID)
+  gstat: physical_status
+  gkat: building_category
+  gklas: building_class
+  ltyp: type_of_property_LTYP
+  gbauj: building_year_of_construction
+  gbaup: building_construction_period
+  gbaum: building_construction_month
+  gabbj: demolition_year
+  gvol: building_volume
+  # gvolsce: source of information on the building volume
+  gastw: number_of_floors
+  ganzwhg: number_of_apartments
+  garea: bulding_footprint_area
+  gazzi: number_of_separate_living_rooms
+  # apartments
+  wbez: apartment_location_on_the_floor
+  wabbj: apartment_demolition_year
+  warea: apartment_area
+  whgnr: apartment_administrative_no
+  wstwk: apartment_floor
+  wmehrg: apartment_is_multistorey
+  weinr: apartment_physical_number
+  wstat: apartment_status
+  wazim: apartment_no_of_rooms
+  wbauj: apartment_construction_year
+  wkche: apartment_has_kitchen
+  wexpdat: wexpdat
+  # gkode: E-Gebäudekoordinate
+  # stroffiziel: Strassenbezeichnung offiziell
+  # strname: Strassenbezeichnung
+  # strname_deinr: strname_deinr
+  # esid: Eidgenössischer Strassenidentifikator
+  # gkodn: N-Gebäudekoordinate
+  # dplzname: dplzname
+  # strnamk: Strassenbezeichnung kurz
+  # strsp: Strassenbezeichnung Sprache
+  # dexpdat: dexpdat
+  # egrid: Federal real estate identifier (EGRID)
+  # egaid: Federal building address identifierr (EGAID)
+  # edid: Federal entry identifier (EDID)
+  lgbkr: land_registry_number
+  # lparzsx: lot_number_suffix
+  # lparz: Lot number suffix
+  # dplz4: post Code
+  # gdekt: kanton
+  gebnr: amtliche_gebäudenummer
+  dplzz: dplzz
+  # dkodn: N-Eingangskoordinate
+  # doffadr: Offizielle Adresse
+  # wexpdat: wexpdat
+  deinr: eingangsnummer_gebaude
+  gvolnorm: gebaudevolumen_norm
+  # gksce: Koordinatenherkunft
+  # label: label
+  # ggdename: ggdename
+  ggdenr: bfs_gemeindenummer
+  # plz_plz6: plz_plz6
+  # strindx: Strassenbezeichnung Index
+  # dkode: E-Eingangskoordinate
+  g_warea_sum: building_total_residential_area
+  g_latest_wbauj: building_latest_unit_construction_year
+  g_ewid_count: building_number_of_residential_units
+  g_w_count: building_number_of_units
+  g_wazim_sum: building_no_of_rooms
+  g_zim_count: building_number_of_rooms
+  g_kche_count: building_number_of_kitchens
+  wstwk_number: apartment_floor_number
+  wstwk_number_plus_multi_story: apartment_floor_number_plus_multi_story
+  wstwk_number_above_ground: apartment_floor_number_above_ground
+  wstwk_number_above_ground_plus_multi_story: apartment_floor_number_above_ground_plus_multi_story
+  g_max_wstwk_number_above_ground: building_max_floor_number_above_ground
+  g_min_wstwk_number_above_ground: building_min_floor_number_above_ground
+  g_n_wstwk_number_above_ground: building_number_of_floor_above_ground
+  g_level_FAR: building_level_floor_area_ratio
+  g_level_PAR: building_level_plot_area_ratio
+  g_level_PAR_residential: building_level_plot_area_ratio_residential
+  gwaerdath1_in_days: update_date_heating_1_in_days
+  gwaerdath2_in_days: update_date_heating_2_in_days
+  latest_gwaerdath_in_days: update_date_heating_in_days
+
+
+
+
+
+drop_propeerty_cols : ['layerBodId',
+ 'layerName',
+ 'featureId',
+ 'id',
+ 'strname_deinr',
+ 'plz_plz6',
+ 'ggdename',
+ 'bfs_gemeindenummer',
+ 'latest_data_update',
+ 'gdekt',
+ 'land_registry_number',
+ 'lparz',
+ 'lparzsx',
+ 'type_of_property_LTYP',
+ 'amtliche_gebäudenummer',
+ 'building_name',
+ 'gkode',
+ 'gkodn',
+ 'coordinate_data_source',
+ 'building_construction_month',
+ 'demolition_year',
+ 'building_volume',
+ 'gebaudevolumen_norm',
+ 'building_volume_data_source',
+ 'civil_defence_room_available',
+ 'Federal_Entry_Identifier',
+ 'Federal_Building_Address_Identifier',
+ 'eingangsnummer_gebaude',
+ 'Federal_Road_Identifier',
+ 'strname',
+ 'strnamk',
+ 'strindx',
+ 'strsp',
+ 'stroffiziel',
+ 'dplzz',
+ 'dplzname',
+ 'dkode',
+ 'dkodn',
+ 'is_official_address',
+ 'dexpdat',
+ 'ewid',
+ 'apartment_administrative_no',
+ 'wexpdat',
+ 'label',
+ 'land borders as of date',
+ 'land in another land pct',
+ 'geometry',
+'apartment_status',
+'number_of_separate_living_rooms',
+'apartment_floor',
+'dplz4',
+'apartment_physical_number',
+'apartment_location_on_the_floor',
+'apartment_demolition_year',
+
+ 
+ 
+]
+
+my_property_cat_cols : [
+ 'physical_status',
+ 'building_category',
+ 'building_class',
+ 'building_construction_period',
+ 'heat_generator_heating_1',
+ 'Energy_heat_source_heating_1',
+ 'heating_1_data_source',
+ 'heat_generator_heating_2',
+ 'Energy_heat_source_heating_2',
+ 'heat_generator_hot_water_1',
+ 'Energy_heat_source_hot_water_1',
+ 'hot_water_1_data_source',
+ 'heat_generator_hot_water_2',
+ 'Energy_heat_source_hot_water_2',
+ 'hot_water_2_data_source',
+ ]
+
+final_apartment_cols : [
+  'apartment_is_multistorey',
+  'apartment_construction_year',
+  'apartment_area',
+  'apartment_no_of_rooms',
+  'apartment_has_kitchen',
+   'floor_numbers', 
+  'floor_names',
+  'apartment 5% monthly rent (CHF)',
+  'apartment median monthly rent (CHF)',
+  'apartment 95% monthly rent (CHF)',
+  'apartment 5% sales price (CHF)',
+  'apartment median sales price (CHF)',
+  'apartment 95% sales price (CHF)'
+]
+
+
+
+
+final_building_cols: [
+  'building ID (egid): federal ID',
+  'physical_status',
+    'building_category',
+     'building_class',
+       'building_year_of_construction',
+        'building_construction_period',
+       'bulding_footprint_area',
+        'number_of_floors',
+         'number_of_apartments',
+       'energy_reference_area',
+        'heat_generator_heating_1',
+       'Energy_heat_source_heating_1',
+        'heating_1_data_source',
+       'update_date_heating_1',
+        'heat_generator_heating_2',
+       'Energy_heat_source_heating_2', 
+       'heating_2_data_source',
+       'update_date_heating_2',
+        'heat_generator_hot_water_1',
+       'Energy_heat_source_hot_water_1',
+        'hot_water_1_data_source',
+       'update_date_hot_water_1',
+        'heat_generator_hot_water_2',
+       'Energy_heat_source_hot_water_2',
+        'hot_water_2_data_source',
+       'update_date_hot_water_2',
+       'median sale price/m² (apartment)',
+       '5% sale price/m² (apartment)',
+        '95% sale price/m² (apartment)',
+       'vacancy rate (%) (apartment)',
+       'no of published for sales (apartment)',
+       'no of published for rent (apartment)',
+       'median monthly rental price/m² (apartment)',
+       '5% monthly rental price/m² (apartment)',
+       '95% monthly rental price/m² (apartment)',
+        'median sale price/m² (house)',
+       '5% sale price/m² (house)',
+        '95% sale price/m² (house)',
+       'vacancy rate (%) (house)',
+       'no of published for sales (house)',
+       'no of published for rent (house)',
+       'median monthly rental price/m² (house)',
+       '5% monthly rental price/m² (house)',
+       '95% monthly rental price/m² (house)',
+       'gross rental yield (%)',
+       'total residential area',
+       'building 5% monthly rent (CHF)', 'building 5% sales price (CHF)',
+       'building 95% monthly rent (CHF)', 'building 95% sales price (CHF)',
+       'building median monthly rent (CHF)',
+       'building median sales price (CHF)']
+       
+final_land_parcel_cols: [
+  'parcel ID (egrid): federal ID',
+  'land parcel area (m²): land parcel area (m²)', 'canton', 'city number',
+  'city name',
+  'current plot area ratio in the parcel: the lower number the higher under-utilized potential',
+  'current residential plot area ratio in the parcel: the lower number the higher under-utilized potential',
+       'current floor area ratio in the parcel: the lower number the higher under-utilized potential',
+       'current total residential area (m²) in the parcel: None',
+       'current highest floor number in the parcel: None',
+       'latest construction year in the parcel: None',
+       'latest construction period in the parcel: None',
+       'latest residential construction year in the parcel: None',
+       'latest residential construction period in the parcel: None',
+       'total residential units in the parcel: None',
+       'total rooms in the parcel: None', 'total kitchens in the parcel: None',
+       'total buildings in the parcel: None',
+       'total residential buildings in the parcel: None',
+       'parcel construction zone: None', 'building zone TypeCode',
+       'parcel construction zone description: None',
+       'building zone Theme Text Text', 'land in building zone pct',
+       'building zone extract pdf', 'building zone extract url',
+       'rent desirability score :relative micro quality score in the same city,where higher score is better. The maximum score is 100.',
+       'access to school score :relative micro quality score in the same city, where higher score is better. The maximum score is 100.',
+       'access to health facilities score :relative micro quality score in the same city, where higher score is better. The maximum score is 100.',
+       'access to bank score :relative micro quality score in the same city, where higher score is better. The maximum score is 100.',
+       'sccess to shops score :relative micro quality score in the same city, where higher score is better. The maximum score is 100.',
+       'access to sport facilities score :relative micro quality score in the same city, where higher score is better. The maximum score is 100.',
+       'public transport access score :relative micro quality score in the same city, where higher score is better. The maximum score is 100.',
+       'immoZipCode',
+      'total residential area',
+      ]
+       
+
+
+
+
+
+
+
+selected_energy_co2_cols : [
+ 'egrid',
+ 'egid',
+ 'full address',
+ 'gdekt',
+ 'co2 class (noveletta)',
+ 'egs_img',
+ 'co2 intensity (noveletta)',
+ 'co2 intensity estimation year (noveletta)',
+ 'co2 class (BAFU)',
+ 'co2 intensity range (BAFU)',
+ 'calculated_co2_intensity_kwh',
+ 'calculated_energy_intensity_kwh',
+#  'certificate',
+ 'co2_class_calculated_co2_intensity_kwh',
+#  'co2_class_co2_intensity_kwh',
+ 'co2_intensity_kwh',
+  'energy source (heating)',
+ 'energy source (hot water)',
+ 'energy standard',
+ 'energy_intensity',
+ 'energy_intensity_avg2y',
+ 'energy_intensity_avg3y',
+    'years_calculating_avg2y',
+ 'years_calculating_avg3y',
+ 'kgCO2-eq',
+ 'energy_intensity_kwh',
+ 'energy_intensity_kwh_climate',
+ 'quantity_of_energy_source_1_kwh',
+ 'quantity_of_energy_source_2_kwh',
+ 'quantity_of_energy_source_3_kwh',
+ 'quantity_of_energy_source_kwh',
+ 'statement_period_end_date',
+ 'statement_period_start_date',
+#  'energy_quantity_kwh_climate_from_ind',
+#  'energy_quantity_kwh_from_ind',
+#  'energy_reference_area',
+#  'energy_reference_area_SIA_416_1',
+#  'energy_source',
+#  'energy_source_1',
+#  'energy_source_1_unit',
+#  'energy_source_2',
+#  'energy_source_2_unit',
+#  'energy_source_3',
+#  'energy_source_3_unit',
+#  'entry_date',
+#  'Energy_heat_source_heating_1',
+#  'Energy_heat_source_heating_2',
+#  'Energy_heat_source_hot_water_1',
+#  'Energy_heat_source_hot_water_2',
+ 'main energy source/generator',
+ 'generator system (heating)',
+ 'generator system (hot water)',
+'update date (heating)',
+ 'update date (hot water)',
+#  'update_date_heating_1_in_days',
+#  'update_date_heating_2',
+#  'update_date_heating_2_in_days',
+#  'update_date_heating_in_days',
+#  'update_date_hot_water_2',
+
+ 'has_ren_energy',
+ 'installed renewable initial power (kwh)',
+ 'installed renewable total power (kwh)',
+ 'installed renewable year',
+ 'minergie_standard_num',
+
+#  'heat_generator_heating_1',
+#  'heat_generator_heating_2',
+#  'heat_generator_hot_water_1',
+#  'heat_generator_hot_water_2',
+#  'heating_1_data_source',
+#  'heating_1_data_source_orig',
+#  'heating_2_data_source',
+#  'hot_water_1_data_source',
+#  'hot_water_1_data_source_orig',
+#  'hot_water_2_data_source',
+ 
+  #  'location_of_the_heating_installation',
+ 
+
+#  'main_energy_source_or_generator_gwr',
+
+#  'no_of_users_of_the_heating_installation',
+#  'quantity_of_energy_source_1',
+ 
+ 
+]
