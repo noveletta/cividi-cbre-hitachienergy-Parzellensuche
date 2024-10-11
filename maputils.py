@@ -9,8 +9,7 @@ from matplotlib import colors as mpcolors
 import geopandas as gpd
 import streamlit as st
 import requests
-from utils import *
-configs_list = load_configs_list()
+
 
 def render_land_map(gdf,border_dgf,sel_cols_for_map,geom='polygon'):
 	## only those selected by the user
