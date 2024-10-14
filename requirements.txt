@@ -7,3 +7,4 @@ folium
 mapclassify
 PyYAML
 altair
+streamlit_folium
