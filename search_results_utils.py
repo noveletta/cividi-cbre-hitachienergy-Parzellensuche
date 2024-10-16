@@ -78,7 +78,6 @@ def render_parcels():
 						'oereb_Gewerbeanteil_Max']
 	sel_cols_for_map = [c for c in sel_cols_for_map if c in parcels_with_geom_gdf.columns]
 	render_land_map(parcels_with_geom_gdf,borders_gdf,sel_cols_for_map,geom='polygon')		
-		
 	column_config = {}
 	column_config['building zone extract pdf'] = st.column_config.LinkColumn("ÖREB extract", display_text="ÖREB extract")
 	st.data_editor(

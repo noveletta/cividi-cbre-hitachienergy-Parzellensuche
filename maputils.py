@@ -66,14 +66,16 @@ def render_land_map(gdf,border_dgf,sel_cols_for_map,geom='polygon'):
 				max_zoom=18
 				)
 			mp_center = ((bounds[1]+bounds[3])/2,(bounds[0]+bounds[2])/2)
-			from streamlit_folium import st_folium
-			if (len(selected_row_ids)>0) and ((len(selected_row_ids)<2)):
-				print('h')
-				st_folium(m,center=mp_center,width=None,height=700,zoom=18)
-			elif(len(selected_row_ids)>0) and ((len(selected_row_ids)>=2)):
-				st_folium(m,width=None,height=700,zoom=16)
-			else:
-				st_folium(m,width=None,height=700)
+			m.to_streamlit()
+			# from streamlit_folium import st_folium
+			
+			# if (len(selected_row_ids)>0) and ((len(selected_row_ids)<2)):
+			# 	print('h')
+			# 	st_folium(m,center=mp_center,width=None,height=700,zoom=18)
+			# elif(len(selected_row_ids)>0) and ((len(selected_row_ids)>=2)):
+			# 	st_folium(m,width=None,height=700,zoom=16)
+			# else:
+			# 	st_folium(m,width=None,height=700)
 		if geom=='point':
 			pass
 
